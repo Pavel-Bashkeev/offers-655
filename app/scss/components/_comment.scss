@@ -1,0 +1,25 @@
+.comment{
+  &-tags{
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 20px 200px 20px 20px;
+    gap: 20px 0;
+    margin-bottom: 30px;
+    &__main{
+      padding: 4px 35px 4px 4px;
+      background-color: $accent;
+      clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+      margin-right: 20px;
+      font: 400 16px/ 19px $font;
+      color: $black;
+    }
+    &__item{
+      font: 700 12px/14px $font;
+      color: #333;
+
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+    }
+  }
+}

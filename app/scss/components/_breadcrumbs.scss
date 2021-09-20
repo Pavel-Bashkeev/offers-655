@@ -1,0 +1,17 @@
+.breadcrumbs{
+  padding-top: 33px;
+  margin-bottom: 23px;
+  &__item{
+    font: 500 18px/22px $font-second;
+    display: flex;
+    align-items: center;
+    color: #ababab;
+    &:not(:last-child){
+      margin-right: 7px;
+      &::after{
+        content: '/';
+        margin-left: 7px;
+      }
+    }
+  }
+}

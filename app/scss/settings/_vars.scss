@@ -1,0 +1,22 @@
+// Colors
+$black: #000000;
+$white: #ffffff;
+$bg:#272727;
+$accent: #C9EFE4;
+// Colors
+// Font
+$font: 'Karla', sans-serif;
+$font-logo: 'Oswald', sans-serif;
+$font-second: 'Barlow Condensed', sans-serif;
+// Font
+
+%bg-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+%bg-contain{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

@@ -1,0 +1,26 @@
+.form{
+  max-width: 310px;
+  margin: 0 auto 30px;
+  &__input{
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 60px;
+    text-align: center;
+    font: 400 20px / 24px $font;
+    color: $black;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #24775f;
+    height: 60px;
+    border-radius: 30px;
+    color: $white;
+  }
+}

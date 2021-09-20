@@ -1,0 +1,22 @@
+.logo {
+  max-width: 860px;
+  padding: 29px 0;
+
+  &__inner {
+    max-width: 440px;
+    margin-left: 16%;
+  }
+
+  &__title {
+    font: 500 60px/60px $font-logo;
+    &--accent {
+      color: #24775F;
+    }
+  }
+
+  &__img {
+    width: 131px;
+    height: 131px;
+    margin-right: 10px;
+  }
+}

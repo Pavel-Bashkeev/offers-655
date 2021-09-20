@@ -1,0 +1,22 @@
+.header{
+  background-color: $accent;
+  padding: 26px 0px 24px;
+}
+.social{
+  &__link{
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+}
+.menu{
+  &__item{
+    &:not(:last-child){
+      margin-right: 49px;
+    }
+  }
+  &__link{
+    text-transform: uppercase;
+    font: 400 18px / 22px $font-second;
+  }
+}

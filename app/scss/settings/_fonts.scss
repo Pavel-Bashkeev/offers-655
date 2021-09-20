@@ -1,0 +1,9 @@
+@include font-face('Karla', '../fonts/Karla-Italic', 400, 'italic');
+@include font-face('Karla', '../fonts/Karla-Regular', 400);
+@include font-face('Karla', '../fonts/Karla-Bold', 700);
+
+@include font-face('Barlow Condensed', '../fonts/BarlowCondensed-Regular', 400);
+@include font-face('Barlow Condensed', '../fonts/BarlowCondensed-Medium', 500);
+
+@include font-face('Oswald', '../fonts/Oswald-Regular', 400);
+@include font-face('Oswald', '../fonts/Oswald-Medium', 500);

@@ -1,0 +1,17 @@
+.content{
+  max-width: 850px;
+  margin-left: 10px;
+  &__title{
+    font: 500 29px/35px $font-second;
+    color: #24775f;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+    &--under{
+      border-bottom: 2px solid #24775f;
+    }
+  }
+  &__subtitle{
+    margin-bottom: 30px;
+  }
+}
