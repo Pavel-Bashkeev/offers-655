@@ -1,11 +1,12 @@
-.comment{
-  &-tags{
+.comment {
+  &-tags {
     border-top: 1px solid #a3a3a3;
     border-bottom: 1px solid #a3a3a3;
     padding: 20px 200px 20px 20px;
     gap: 20px 0;
     margin-bottom: 30px;
-    &__main{
+
+    &__main {
       padding: 4px 35px 4px 4px;
       background-color: $accent;
       clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
@@ -13,13 +14,143 @@
       font: 400 16px/ 19px $font;
       color: $black;
     }
-    &__item{
+
+    &__item {
       font: 700 12px/14px $font;
       color: #333;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 20px;
       }
+    }
+  }
+
+  &-content {
+    &__title {
+      margin-bottom: 20px;
+      font: 400 17px / 20px $font;
+      color: #333;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.comment-user {
+  margin-bottom: 25px;
+
+  &__box {
+    width: 50px;
+    height: 50px;
+    background-color: #D4D4D4;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__btn {
+    width: 67px;
+    height: 45px;
+    background-color: $accent;
+    border-radius: 5px;
+    @extend %bg-contain;
+    background-image: url('../images/dest/icons/arrow.svg');
+    background-size: 40%;
+  }
+
+  &__input {
+    max-width: 460px;
+    width: 100%;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #C8C8C8;
+    height: 45px;
+    padding: 13px 10px 11px;
+    font: 400 18px / 21px $font;
+    color: $black;
+    outline: none;
+    pointer-events: none;
+
+    &::placeholder {
+      font: 400 18px / 21px $font;
+      color: #808080;
+    }
+  }
+}
+
+.comment-items {
+  max-width: 727px;
+  &__item {
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+    &-box {
+      width: 50px;
+      height: 50px;
+      background-color: #D4D4D4;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    &-top {
+      margin-bottom: 10px;
+    }
+
+    &-name {
+      font: 400 18px /21px $font;
+      color: #385898;
+      margin-right: 27px;
+      &::first-letter{
+        text-transform: uppercase;
+      }
+    }
+    &-prescription{
+      font: 400 14px / 16px $font;
+      color: #949494;
+    }
+    &-text{
+      font: 400 18px / 21px $font;
+      color: #222;
+      margin-bottom: 12px;
+      &::first-letter{
+        text-transform: uppercase;
+      }
+      &--under{
+        border-bottom: 1px solid #222;
+      }
+    }
+    &-like{
+      font: 400 14px / 22px $font;
+      color: #151515;
+      margin-right: 21px;
+      &::before{
+        width: 20px;
+        height: 20px;
+        content: '';
+        @extend %bg-contain;
+        background-image: url('../images/dest/icons/heart.svg');
+        display: block;
+        margin-right: 5px;
+      }
+    }
+    &-answer{
+      font: 700 14px / 16px $font;
+      color: #8c8c8c;
+      text-transform: uppercase;
+    }
+    &-product{
+      width: 200px;
+      margin-top: 10px;
     }
   }
 }

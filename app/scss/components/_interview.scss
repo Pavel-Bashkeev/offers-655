@@ -18,6 +18,9 @@
     &__text {
       color: $black;
       margin-bottom: 8px;
+
+      font: 400 20px / 24px $font;
+      color: $black;
     }
 
     &__descr {
@@ -86,6 +89,9 @@
       width: 192px;
       margin-right: 18px;
       color: #424424;
+      &--under{
+        border-bottom: 1px solid #424242;
+      }
     }
 
     &__gif {
